@@ -1,0 +1,18 @@
+---
+# tasks file for webserver
+
+- name: Install HTTPD package
+  package:
+    name: "httpd"
+    state: present
+
+- name: copy required webpages to target IP's
+  copy:
+    content: "Hello, This is {{ ansible_hostname }}"
+    dest: /var/www/html/index.html
+
+- name: Start the service
+  service:
+    name: "httpd"
+    state: started
+

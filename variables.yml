@@ -1,0 +1,7 @@
+- aws_key_pair: "hcc81"
+- aws_instance_type: "t2.micro"
+- aws_image: "ami-052c08d70def0ac62"
+- aws_subnet_id: "subnet-1f3c4953"
+- aws_region: "ap-south-1"
+- aws_SG: "default"
+
